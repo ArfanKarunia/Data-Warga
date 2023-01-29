@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title">Data Warga</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <form autocomplete="off" onsubmit="onFormSubmit()">
+        <div class="box">
+            <h1>Data Warga</h1>
+            <div class="form-tambah">
+                <div class="box">
+                    <h4>Data Pribadi</h4>
+                    <label for="nama"></label>
+                    <input type="text" name="nama" id="nama" placeholder="Input Nama Anda...">
+                    <label for="umur"></label>
+                    <input type="number" name="umur" id="umur" placeholder="Input Umur Anda...">
+                    <label for="alamat"></label>
+                    <input type="text" name="alamat" id="alamat" placeholder="Input Alamat Anda...">
+                    <label for="nomer"></label>
+                    <input type="number" name="nomer" id="nomer" placeholder="Input NIK Anda...">
+                </div>
+                <div class="box">
+                    <h4>Data Domisili</h4>
+                    <label for="provinsi"></label>
+                    <input type="text" name="provinsi" id="provinsi" placeholder="Input Provinsi Anda...">
+                    <label for="kk"></label>
+                    <input type="text" name="kk" id="kk" placeholder="Input Kota/Kabupaten Anda...">
+                    <label for="kecamatan"></label>
+                    <input type="text" name="kecamatan" id="kecamatan" placeholder="Input Kecamatan Anda...">
+                    <label for="kd"></label>
+                    <input type="text" name="kd" id="kd" placeholder="Input Kel/Desa Anda...">
+                </div>
+                <div class="box">
+                    <h4>Data Jenis Pekerjaan</h4>
+                    <label for="pekerjaan"></label>
+                    <input type="text" name="pekerjaan" id="pekerjaan" placeholder="Input Pekerjaan Anda...">
+                    
+                </div>
+                <div class="box">
+                    <h4>Status Perkawinan</h4>
+                    <label for="menikah">
+                        <input type="radio" name="status" id="menikah"> Sudah Menikah
+                        <span></span>
+                    </label>
+                    <label for="bmkh">
+                    <input type="radio" name="status" id="bmkh"> Blum Menikah
+                    <span></span>
+                    </label>
+                </div>
+            </div>
+                 <input type="submit" value="Tambah">
+        </div>
+    </form>
+
+        <td>
+            <table class="list" id="data_p">
+                <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Umur</th>
+                    <th>Alamat</th>
+                    <th>NIK</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                
+                </tbody>
+            </table>
+        </td>
+        <td>
+            <table class="list" id="data_d">
+                <thead>
+                <tr>
+                    <th>Provinsi</th>
+                    <th>Kota/Kab</th>
+                    <th>Kecamatan</th>
+                    <th>Kel/Desa</th>
+                    <th>Pekerjaan</th>
+                    <th>Status Perkawinan</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                
+                </tbody>
+            </table>
+        </td>
+    <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
